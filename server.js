@@ -18,8 +18,11 @@ const app = express()
 
 //ROOT ROUTE '/' FOR OUR APP
 app.get('/', function(req, res) {
-    res.send('<h1>Hello World</h1>')
-})
+    res.send('<h1>Hello Express</h1>')
+}) //Hello World - stop and restart server to display or use NODEMON
+
+//install nodemon with npm i -g nodemon
+
 
 //TELL THE APP TO LISTEN ON PORT 8080, 3000, ETC. FOR HTTP REQUESTS
 app.listen(3000, function() {
